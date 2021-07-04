@@ -4,16 +4,37 @@
     <meta charset="UTF-8">
     <title>WEB1 - html</title>
     <style>
+        body {
+            margin:0;
+        }
         a {
             color: black;
             text-decoration : none;
         }
         h1 {
+            margin: 0;
+            padding: 20px;
+            border-bottom: 2px solid black;
             font-size: 45px;
             text-align: center;
         }
         .selected{
             color: green;
+        }
+        #Grid{
+            display: grid;
+            padding-right: 30px;
+            grid-template-columns: 200px 1fr;
+        }
+        #Grid ol {
+            margin: 0;
+            padding: 30px;
+            border-right: 2px solid black;
+            width: 100px;
+        }
+        #Reference{
+            text-align: right;
+            padding-right: 30px;
         }
         #active{
             text-decoration: underline;
@@ -22,28 +43,27 @@
 </head>
 <body>
     <h1><a href="index.html">WEB</a></h1>
-<ol>
-    <li><a href="HTML.html" class="selected" id="active">HTML</a></li>
-    <li><a href="CSS.html">CSS</a></li>
-    <li><a href="JavaScript.html">JavaScript</a></li>
-</ol>
-<!---
-<ol>
-    <li>Spring</li>
-    <li>Node JS</li>
-    <li>Django</li>
-</ol>
---->
-<p>
-    About HTML
-</p>
-<p>
-    <img src="../AWSimage.png" width="50%">
-</p>
+    <div id="Grid">
+        <ol>
+            <li><a href="HTML.html" class="selected" id="active">HTML</a></li>
+            <li><a href="CSS.html">CSS</a></li>
+            <li><a href="JavaScript.html">JavaScript</a></li>
+        </ol>
+        <div id="Article">
+            <p>
+                <h2>HTML</h2>
+                The HyperText Markup Language, or HTML is the standard markup language for documents designed to be displayed in a web browser. It can be assisted by technologies such as Cascading Style Sheets (CSS) and scripting languages such as JavaScript.
+                Web browsers receive HTML documents from a web server or from local storage and render the documents into multimedia web pages. HTML describes the structure of a web page semantically and originally included cues for the appearance of the document.
+                <p>
+                    <img src="../AWSimage.png" width=400px>
+                </p>
+            </p>
+        </div>
+    </div>
 <!--Link to another site-->
 <p>
-    Refefence site
-    <a href="https://opentutorials.org" target="_blank" title="생활코딩 웹페이지로 연결">open-tutorials</a>
+    <div id="Reference"> Reference site
+    <a href="https://opentutorials.org" target="_blank" title="생활코딩 웹페이지로 연결">open-tutorials</a></div>
 </p>
 </body>
 </html>
