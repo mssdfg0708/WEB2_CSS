@@ -26,8 +26,7 @@
         }
         #Grid{
             display: grid;
-            padding-right: 30px;
-            grid-template-columns: 200px 1fr;
+            grid-template-columns: 160px 1fr;
         }
         #Grid ol {
             margin: 0;
@@ -38,6 +37,18 @@
         #Reference{
             text-align: right;
             padding-right: 30px;
+        }
+        #Article{
+            padding-right: 30px;
+            padding-left: 30px;
+        }
+        @media(max-width : 800px){
+            #Grid{
+                display: block;
+            }
+            #Grid ol{
+                border-right: none;
+            } 
         }
     </style>
 </head>
