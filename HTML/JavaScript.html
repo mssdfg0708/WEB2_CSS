@@ -5,22 +5,28 @@
     <title>WEB1 - html</title>
     <style>
         a {
-            color: green;
+            color: black;
             text-decoration : none;
         }
         h1 {
             font-size: 45px;
             text-align: center;
         }
+        .selected{
+            color: green;
+        }
+        #active{
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
     <h1><a href="index.html">WEB</a></h1>
-<ul>
+<ol>
     <li><a href="HTML.html">HTML</a></li>
     <li><a href="CSS.html">CSS</a></li>
-    <li><a href="JavaScript.html" style="color: black; text-decoration: underline;">JavaScript</a></li>
-</ul>
+    <li><a href="JavaScript.html" class="selected" id="active">JavaScript</a></li>
+</ol>
 <!---
 <ol>
     <li>Spring</li>
